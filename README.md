@@ -13,4 +13,4 @@ Most is replicated from https://github.com/davidboy/herokubot but let me expound
 7. Then `git push heroku master`
 8. Then `heroku scale web=0`
 9. Then `heroku scale bot=1`
-10. Log into the channel(s) and see your bot go.
+10. Join the channel(s) and see your bot go.
