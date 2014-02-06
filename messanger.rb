@@ -12,14 +12,3 @@ class Messanger
 	end
 
 end
-
-bot = Cinch::Bot.new do
-	configure do |c|
-		c.nick = "zipper|bot"
-		c.server = "irc.freenode.net"
-		c.channels = ["#zippy"]
-		c.plugins.plugins = [Messanger]
-	end
-end
-
-bot.start

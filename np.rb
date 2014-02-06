@@ -26,14 +26,3 @@ class Np
   end
 end
 
-bot = Cinch::Bot.new do
-	configure do |c|
-		c.nick = "zipper|bot"
-		c.server = "irc.freenode.net"
-		c.channels = ["#zippy"]
-    c.plugins.prefix = /^@/
-		c.plugins.plugins = [Np]
-	end
-end
-
-bot.start
