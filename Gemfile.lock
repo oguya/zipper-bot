@@ -2,9 +2,15 @@ GEM
   remote: http://rubygems.org/
   specs:
     cinch (2.0.10)
+    mini_portile (0.5.2)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
+    wolfram-alpha (0.3.1)
+      nokogiri
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   cinch
+  wolfram-alpha
