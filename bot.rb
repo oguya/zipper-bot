@@ -8,7 +8,7 @@ bot = Cinch::Bot.new do
 	configure do |c|
 		c.nick = "zipper|bot"
 		c.server = "irc.freenode.net"
-		c.channels = ["#zippy"]
+		c.channels = ["#nairobilug"]
     c.plugins.prefix = /^@/
 		c.plugins.plugins = [Np, Messanger, Wa]
 	end
