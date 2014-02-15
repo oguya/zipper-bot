@@ -1,6 +1,6 @@
 require 'cinch'
 require 'wolfram'
-require 'cgi'
+
  
 class Wa
   include Cinch::Plugin
@@ -17,9 +17,13 @@ class Wa
 
     unrefinedResult = Wolfram.fetch(query) 
 
-    refinedResult = unrefinedResult.pods[1].to_s
+    refinedResult = unrefinedResult.pods[1]
 
-    m.reply(refinedResult, true)
+    afterRegex = /.+/.match refinedResult.to_s
+
+    finalResult = afterRegex.to_s
+
+    m.reply(finalResult, true)
 
   end
 end
