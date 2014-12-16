@@ -6,7 +6,7 @@ require_relative 'wolfram'
 
 bot = Cinch::Bot.new do
 	configure do |c|
-		c.nick = "nairobi|bot"
+		c.nick = "nairobi-bot"
 		c.server = "irc.freenode.net"
 		c.channels = ["#nairobilug"]
     c.plugins.prefix = /^@/
