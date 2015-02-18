@@ -1,5 +1,6 @@
 require 'cinch'
 require_relative 'np'
+require_relative 'define'
 require_relative 'messanger'
 require_relative 'wolfram'
 require_relative 'echo' 
@@ -11,9 +12,9 @@ bot = Cinch::Bot.new do
 	configure do |c|
 		c.nick = "nairobi-bot"
 		c.server = "irc.freenode.net"
-		c.channels = ["#nairobilug"]
+		c.channels = ["#zippy"]
     c.plugins.prefix = /^@/
-		c.plugins.plugins = [Np, Wa, Echo, LinkInfo, History, Seen]
+		c.plugins.plugins = [Np, Wa, Echo, LinkInfo, History, Seen, Define]
     #		c.plugins.plugins = [Np, Messanger, Wa]
     config.plugins.options[History] = {
      :mode => :max_messages,
