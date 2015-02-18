@@ -66,7 +66,7 @@ class Seen
     end
 
     if info = find_last_message(nick)
-      msg.reply("I have last seen #{nick} on #{info.time} saying: #{info.message}")
+      msg.reply("#{nick}: was last seen on #{info.time} saying: #{info.message}")
     else
       msg.reply("I have not yet seen #{nick} saying something.")
     end
