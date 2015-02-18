@@ -4,9 +4,19 @@ Details
 bot.rb is the bot itself. I've got it in such a way that it imports the modules for scrobbling and querrying wolfram alpha.
 This way it's not one big file and is easier to debug, add functionality etc.
 
+Instructions for use
+---
 
-Instructions
-------------
+**Define**: Definition of a word.  `@define <word to define>`
+**Now playing**: last song scrobbled to last fm. `@np <last fm username>` or `@np` if last fm username is your irc nick.
+**Wolfram alpha**: Query wolfram alpha. `@wa <search query>`
+**echo**: Echo a word or sentence. `@echo <word to echo>`
+**Seen**: To find out when a nick was last seen in the channel. `@seen <nick>`
+**History**: To get a short log of what has been going on in the channel (for example just after joining) `/msg nairobi_bot history`
+**Link info**: nairobi_bot will automatically give a web page title and description if they exist.
+
+Deploying
+---------
 
 Clone repo.
 Run `bundle install` *I always delete the Gemfile.lock before running bundle install.*
@@ -36,3 +46,4 @@ Deployment (heroku) via heroku git:
 5. Then `heroku scale web=0`
 6. Then `heroku scale bot=1`
 7. Join the channel(s) and see your bot go.
+
