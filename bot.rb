@@ -11,7 +11,7 @@ bot = Cinch::Bot.new do
 	configure do |c|
 		c.nick = "nairobi-bot"
 		c.server = "irc.freenode.net"
-		c.channels = ["#zippy"]
+		c.channels = ["#nairobilug"]
     c.plugins.prefix = /^@/
 		c.plugins.plugins = [Np, Wa, Echo, LinkInfo, History, Seen]
     #		c.plugins.plugins = [Np, Messanger, Wa]
