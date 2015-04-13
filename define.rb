@@ -17,8 +17,9 @@ class Define
     end
 
     parsedJSON = open("http://api.duckduckgo.com/?q=#{b}&format=json") { |f| JSON.parse f.read }
-    definitions = parsedJSON["RelatedTopics"][count]
+    definitions = parsedJSON["RelatedTopics"][0]
 
+    
     m.reply "#{definitions["Text"]} Link: #{definitions["FirstURL"]}"
   end
 
