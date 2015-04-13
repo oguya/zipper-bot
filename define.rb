@@ -2,6 +2,11 @@ require 'cinch'
 require 'open-uri'
 require 'json'
 
+# API GUIDE 101!
+# http://api.duckduckgo.com/?q=#{b}&format=json&pretty=1
+# where b = word to define
+# For example: define the word 'loci'
+# http://api.duckduckgo.com/?q=loci&format=json&pretty=1
 
 class Define
   include Cinch::Plugin
