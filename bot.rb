@@ -1,6 +1,5 @@
 require 'cinch'
 require_relative 'np'
-require_relative 'np_libre'
 require_relative 'define'
 require_relative 'messanger'
 require_relative 'wolfram'
