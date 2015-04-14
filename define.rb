@@ -30,9 +30,4 @@ class Define
         m.reply "Don't fuck wid me!!"
     end
   end
-
-  def is_single_word(string)
-    string.strip == string and string.include?(" ")
-  end
-  
 end
