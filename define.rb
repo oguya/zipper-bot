@@ -1,6 +1,7 @@
 require 'cinch'
 require 'open-uri'
 require 'json'
+require 'uri'
 
 # API GUIDE 101!
 # http://api.duckduckgo.com/?q=#{b}&format=json&pretty=1
@@ -15,11 +16,7 @@ class Define
 
   def execute(m, query)
 
-    if is_single_word(query)
-      b = query
-    else
-      b = query.split.join("+")
-    end
+    b = URI.escape(query)
 
     parsedJSON = open("http://api.duckduckgo.com/?q=#{b}&format=json") { |f| JSON.parse f.read }
     if parsedJSON["RelatedTopics"].length > 0
