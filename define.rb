@@ -27,7 +27,7 @@ class Define
     
         m.reply "#{abstractText} Link: #{abstractURL}"
     else
-        m.reply "Don't fuck wid me!!"
+        m.reply "I got nothing :( Just google it -> https://www.google.com/search?q=#{b}&ie=utf-8&oe=utf-8"
     end
   end
 end
